@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 50px;
+}
+
+#search input {
+  border: 4px solid #00000020;
+  border-radius: 10px;
+  margin: 16px;
+}
+
+#cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+#cards .card {
+  width: calc(25% - 23px);
+  /* background-image: linear-gradient(-45deg, #777777, #dedede); */
+  border-radius: 10px;
+  border: 4px solid #00000020;
+  padding: 16px 0;
+}
+
+#cards .card .card-image {
+  position: relative;
+}
+
+#cards .card .card-image img {
+  width: 90%;
+  /* width: 200px; */
+  height: 200px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+#cards .card .card-content {
+  padding: 16px;
+}
+
+#cards .card .card-content p {
+  padding: 16px 0;
+}
+
+#cards .card .card-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 15px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #98002e;
+}
+
+@media screen and (max-width: 769px) {
+  body {
+      padding: 50px;
+  }
+
+  #cards .card {
+      width: calc(50% - 13px);
+  }
+}
+
+@media screen and (max-width: 481px) {
+  body {
+      padding: 50px;
+  }
+
+  #cards .card {
+      width: calc(100% - 13px);
+  }
+}
+
+:root {
+  --primary: #c92071;
+  --secondary: #b5b6f2;
+  --tertiary: #991956;
+  --dark-gray: #1f1f1f;
+  --dark-gray-2: #47474707;
+  --dark-gray-3: #666666;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem calc((100vw - 1200px) / 2);
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+.search {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  cursor: text;
+  background-color: var(--dark-gray-2);
+  color: var(--dark-gray-3);
+  border-radius: 8px;
+  padding-right: 1rem;
+}
+
+.search input {
+  background: none;
+  width: 100%;
+  border: none;
+  padding-left: 1rem;
+  font-weight: normal;
+  font-size: 16px;
+  outline: none;
+}
+
+.search button {
+  background: none;
+  border: none;
+  cursor: text;
+}
