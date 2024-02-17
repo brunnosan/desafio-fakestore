@@ -134,3 +134,25 @@ header {
   border: none;
   cursor: text;
 }
+
+.sort {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  cursor: text;
+  background-color: var(--dark-gray-2);
+  color: var(--dark-gray-3);
+  border-radius: 8px;
+  padding-right: 1rem;
+}
+
+.sort select {
+  background: none;
+  width: 100%;
+  border: none;
+  padding-left: 1rem;
+  font-weight: normal;
+  font-size: 16px;
+  outline: none;
+  color: var(--dark-gray-3);
+}
